@@ -50,6 +50,7 @@ gem 'nokogiri', '>=1.6.8.rc3'
 
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-platforms :mingw, :mswin do
+platforms :mingw, :mswin, :x64_mingw do
+  gem 'tzinfo'
   gem 'tzinfo-data'
 end
