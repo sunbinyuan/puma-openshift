@@ -1,6 +1,8 @@
 #!/bin/bash -e
 
-source "${OPENSHIFT_RUBY_DIR}/lib/ruby_context"
+source ${OPENSHIFT_RUBY_DIR}/lib/ruby_context
+source $OPENSHIFT_CARTRIDGE_SDK_BASH
+
 PUMA_PID_FILE="$OPENSHIFT_RUBY_DIR/run/puma.pid"
 
 echo "Starting Puma"
